@@ -1,0 +1,100 @@
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.animate-slideIn {
+    animation: slideIn 2s forwards;
+}
+
+.animate-slideOut {
+    animation: slideOut 2s forwards;
+}
+
+/* Added styles for the toggle button */
+.toggle-btn {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 8px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.floating-discount {
+    animation-name: floating-discount;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating-discount {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(8px, 0px);
+    }
+
+    100% {
+        transform: translate(-0px, 0px);
+    }
+
+}
+
+.floating-4 {
+    animation-name: floating-4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating-4 {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 8px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+</style>
